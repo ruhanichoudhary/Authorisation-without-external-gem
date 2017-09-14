@@ -1,5 +1,8 @@
 <h1>Authentication Project</h1>
 <h2><%=link_to 'Private Dashboard' , dashboard_path%>  |  <%= link_to 'About Us' , about_path%> </h2>
+
+
+<%if current_user?%>
 <h3>
 	All Other Users
 </h3>
@@ -8,3 +11,4 @@
 	  <li><%=user.email%></li>
     <% end %>
 </ul>
+<%end%>

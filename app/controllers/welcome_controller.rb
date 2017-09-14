@@ -4,10 +4,5 @@ class WelcomeController < ApplicationController
   	@users = User.all
   end
 
-  def about
-  end
-  
-  def dashboard	
-  end
-
+ 
 end
