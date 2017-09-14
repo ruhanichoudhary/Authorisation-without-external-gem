@@ -2,6 +2,8 @@ Rails.application.routes.draw do
  
   get 'welcome/index'
   root "welcome#index"
+  get '/about' => 'welcome#about'
+  get '/dashboard' => 'welcome#dashboard'
   resources :sessions , only: [:create]
   get '/login' => 'sessions#new'
   get '/logout' => 'sessions#destroy'

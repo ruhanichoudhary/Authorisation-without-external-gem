@@ -1,7 +1,8 @@
 <h1>Authentication Project</h1>
-<h2>
+<h2><%=link_to 'Private Dashboard' , dashboard_path%>  |  <%= link_to 'About Us' , about_path%> </h2>
+<h3>
 	All Other Users
-</h2>
+</h3>
 <ul>
     <% @users.each do |user|%>
 	  <li><%=user.email%></li>
